@@ -1,0 +1,23 @@
+/*==================
+Trang 7 - Trải nghiệm quán phở
+================== */
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.intro img {
+    transition: 0.3s;
+}
+
+.intro img:hover {
+    transform: scale(1.03);
+}
