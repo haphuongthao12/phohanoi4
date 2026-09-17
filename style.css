@@ -788,3 +788,472 @@ body {
 
     letter-spacing: 1px;
 }
+
+
+/* =================================================
+   TRANG LỊCH SỬ PHỞ HÀ NỘI
+   ================================================= */
+
+
+/* ================= HERO LỊCH SỬ ================= */
+
+.lich-su-hero {
+    width: 90%;
+    height: 470px;
+
+    margin: 45px auto;
+
+    background-color: #f3e8d8;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.lich-su-hero-noi-dung {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 52%;
+
+    padding: 105px 0 0 9%;
+}
+
+
+.lich-su-hero-noi-dung p {
+    color: #9b0000;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+.lich-su-hero-noi-dung h2 {
+    margin: 18px 0;
+
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-line {
+    width: 70px;
+
+    height: 3px;
+
+    margin: 20px 0;
+
+    background-color: #9b0000;
+}
+
+
+.lich-su-hero-noi-dung span {
+    display: block;
+
+    width: 350px;
+
+    color: #666;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* Hình minh họa */
+
+.lich-su-hero-hinh {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 47%;
+
+    height: 100%;
+
+    padding-top: 65px;
+
+    text-align: center;
+}
+
+
+.lich-su-hero-hinh svg {
+    width: 400px;
+
+    height: 350px;
+
+    transition: 0.5s;
+}
+
+
+.lich-su-hero:hover
+.lich-su-hero-hinh svg {
+    transform: scale(1.04);
+}
+
+
+/* ================= GIỚI THIỆU ================= */
+
+.lich-su-gioi-thieu {
+    width: 70%;
+
+    margin: 90px auto;
+
+    text-align: center;
+}
+
+
+.lich-su-gioi-thieu h2 {
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+
+.lich-su-gioi-thieu p:not(.tieu-de-phu) {
+    width: 80%;
+
+    margin: 18px auto;
+
+    color: #666;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= TIMELINE ================= */
+
+.timeline-section {
+    width: 82%;
+
+    margin: 100px auto;
+}
+
+
+.timeline-title {
+    margin-bottom: 70px;
+
+    text-align: center;
+}
+
+
+.timeline-title h2 {
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 31px;
+}
+
+
+/* Một mốc */
+
+.timeline-item {
+    position: relative;
+
+    width: 85%;
+
+    min-height: 190px;
+
+    margin: 0 auto 55px;
+
+    padding-left: 180px;
+}
+
+
+/* Số */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 15px;
+
+    left: 50%;
+
+    width: 48px;
+
+    height: 48px;
+
+    margin-left: -24px;
+
+    line-height: 48px;
+
+    background-color: #8b0000;
+
+    border: 5px solid #f7eee2;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* Đường giữa */
+
+.timeline-item:before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: -55px;
+
+    left: 50%;
+
+    width: 1px;
+
+    background-color: #cda99b;
+}
+
+
+.timeline-item:last-child:before {
+    display: none;
+}
+
+
+/* Năm */
+
+.timeline-nam {
+    position: absolute;
+
+    left: 0;
+
+    top: 25px;
+
+    width: 150px;
+
+    color: #9b0000;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-align: right;
+}
+
+
+/* Nội dung */
+
+.timeline-content {
+    display: inline-block;
+
+    width: 48%;
+
+    margin-left: 52%;
+
+    padding: 25px 30px;
+
+    background-color: white;
+
+    border: 1px solid #e0caca;
+
+    text-align: left;
+
+    transition: 0.4s;
+}
+
+
+.timeline-content h3 {
+    margin-top: 0;
+
+    color: #850000;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+}
+
+
+.timeline-content p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Mốc bên trái */
+
+.timeline-doi .timeline-content {
+    margin-left: 0;
+}
+
+
+.timeline-doi .timeline-nam {
+    left: auto;
+
+    right: 0;
+
+    text-align: left;
+}
+
+
+.timeline-content:hover {
+    transform: translateY(-6px);
+
+    border-color: #a00000;
+
+    box-shadow: 0 10px 25px rgba(100, 0, 0, 0.12);
+}
+
+
+/* ================= HÀ NỘI & PHỞ ================= */
+
+.ha-noi-pho {
+    width: 90%;
+
+    margin: 100px auto;
+
+    padding: 70px 8%;
+
+    background-color: #f2e6d5;
+}
+
+
+.ha-noi-text {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 55%;
+}
+
+
+.ha-noi-text h2 {
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    line-height: 1.3;
+}
+
+
+.duong-ke-trai {
+    width: 60px;
+
+    height: 3px;
+
+    margin: 20px 0;
+
+    background-color: #9b0000;
+}
+
+
+.ha-noi-text p:not(.tieu-de-phu) {
+    width: 90%;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* Trích dẫn */
+
+.ha-noi-trich-dan {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 40%;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+
+.dau-ngoac,
+.dau-ngoac-cuoi {
+    color: #9b0000;
+
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    height: 35px;
+}
+
+
+.ha-noi-trich-dan p {
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+}
+
+
+/* ================= KẾT ================= */
+
+.lich-su-ket {
+    width: 70%;
+
+    margin: 100px auto;
+
+    text-align: center;
+}
+
+
+.lich-su-ket h2 {
+    color: #780000;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+
+.lich-su-ket p:last-child {
+    width: 75%;
+
+    margin: auto;
+
+    color: #666;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
