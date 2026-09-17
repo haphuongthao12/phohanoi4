@@ -183,14 +183,7 @@ Trang 6
 }
 
 
-/* ===== TRANG CHỦ ===== */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* HEADER */
+/* THANH MENU TRANG CHỦ */
 
 header {
     height: 100px;
@@ -203,11 +196,9 @@ header h1 {
     left: 30px;
     top: 20px;
     margin: 0;
-    color: #8b0000;
+    color: red;
     font-size: 32px;
 }
-
-/* MENU */
 
 nav {
     position: absolute;
@@ -217,13 +208,13 @@ nav {
 
 nav a {
     margin-left: 15px;
+    color: black;
     text-decoration: none;
-    color: #333333;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #8b0000;
+    color: red;
 }
 
 
@@ -231,91 +222,20 @@ nav a:hover {
 
 main {
     width: 90%;
-    margin: 30px auto;
-}
-
-h2 {
-    color: #8b0000;
-}
-
-
-/* GIỚI THIỆU */
-
-.gioi-thieu {
+    margin: 40px auto;
     text-align: center;
 }
 
-.gioi-thieu h2 {
-    font-size: 30px;
-}
-
-.gioi-thieu img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    border: 2px solid #8b0000;
-}
-
-.gioi-thieu p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* GIỚI THIỆU WEBSITE */
-
-.gioi-thieu-website {
-    margin-top: 40px;
-    padding: 20px;
-    border: 1px solid #cccccc;
-    text-align: center;
-}
-
-.gioi-thieu-website p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* NỘI DUNG NỔI BẬT */
-
-.cac-noi-dung {
-    margin-top: 40px;
-}
-
-.cac-noi-dung > h2 {
-    text-align: center;
-    font-size: 28px;
-}
-
-.noi-dung {
-    display: inline-block;
-    vertical-align: top;
-    width: 28%;
-    min-height: 180px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #cccccc;
-}
-
-.noi-dung h3 {
-    color: #8b0000;
-}
-
-.noi-dung p {
-    line-height: 1.5;
-}
-
-.noi-dung a {
-    color: #8b0000;
-    font-weight: bold;
+main h2 {
+    color: red;
+    font-size: 32px;
 }
 
 
 /* FOOTER */
 
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 20px;
     border-top: 2px solid #8b0000;
     text-align: center;
