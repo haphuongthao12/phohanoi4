@@ -66,3 +66,257 @@ footer{
     color:white;
     padding:20px;
 }
+
+
+
+.cac-loai-pho {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.cac-loai-pho h1 {
+    text-align: center;
+    color: #7b1e1e;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mo-ta {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ===========
+Trang 6
+===========*/
+/* TỪNG LOẠI PHỞ */
+
+.loai-pho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
+/* HÌNH ẢNH */
+
+.hinh-pho {
+    width: 40%;
+}
+
+.hinh-pho img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* NỘI DUNG */
+
+.thong-tin-pho {
+    width: 60%;
+}
+
+.thong-tin-pho h2 {
+    color: #7b1e1e;
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.thong-tin-pho p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+/* HIỆU ỨNG */
+
+.loai-pho {
+    transition: 0.3s;
+}
+
+.loai-pho:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+
+/* ĐIỆN THOẠI */
+
+@media (max-width: 700px) {
+
+    .loai-pho {
+        flex-direction: column;
+    }
+
+    .hinh-pho,
+    .thong-tin-pho {
+        width: 100%;
+    }
+
+    .hinh-pho img {
+        height: 220px;
+    }
+
+}
+
+
+/* ===== TRANG CHỦ ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    position: relative;
+    border-bottom: 3px solid #8b0000;
+}
+
+header h1 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    margin: 0;
+    color: #8b0000;
+    font-size: 32px;
+}
+
+/* MENU */
+
+nav {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8b0000;
+}
+
+
+/* NỘI DUNG */
+
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #8b0000;
+}
+
+
+/* GIỚI THIỆU */
+
+.gioi-thieu {
+    text-align: center;
+}
+
+.gioi-thieu h2 {
+    font-size: 30px;
+}
+
+.gioi-thieu img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #8b0000;
+}
+
+.gioi-thieu p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* GIỚI THIỆU WEBSITE */
+
+.gioi-thieu-website {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.gioi-thieu-website p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* NỘI DUNG NỔI BẬT */
+
+.cac-noi-dung {
+    margin-top: 40px;
+}
+
+.cac-noi-dung > h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.noi-dung {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    min-height: 180px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+.noi-dung h3 {
+    color: #8b0000;
+}
+
+.noi-dung p {
+    line-height: 1.5;
+}
+
+.noi-dung a {
+    color: #8b0000;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #8b0000;
+    text-align: center;
+}
