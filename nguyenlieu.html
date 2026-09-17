@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyên liệu &amp; cách nấu Phở</title>
+<style>
+  :root{
+    --bone:#FAF6EE;
+    --bone-2:#F1E9D8;
+    --ink:#2B241B;
+    --ink-soft:#5A4F3F;
+    --broth:#A8471C;
+    --broth-deep:#7A3013;
+    --line:#E2D6BC;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bone);
+    color:var(--ink);
+    font-family:'Georgia', 'Times New Roman', serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:56px 24px 80px;
+  }
+  header{
+    margin-bottom:48px;
+  }
+  .eyebrow{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:var(--broth);
+    margin:0 0 8px;
+  }
+  h1{
+    font-size:38px;
+    margin:0 0 12px;
+    color:var(--ink);
+    font-weight:normal;
+  }
+  .lead{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin:0;
+  }
+  h2{
+    font-size:24px;
+    font-weight:normal;
+    margin:0 0 18px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--line);
+  }
+  section{
+    margin-top:44px;
+  }
+  .ing-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+  }
+  .ing-group h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-transform:none;
+    color:var(--broth-deep);
+    margin:0 0 10px;
+    font-weight:bold;
+  }
+  .ing-group ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:var(--ink);
+  }
+  .ing-group li{
+    padding:7px 0;
+    border-bottom:1px dashed var(--line);
+  }
+  .ing-group li:last-child{
+    border-bottom:none;
+  }
+  .steps{
+    counter-reset:step;
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .steps li{
+    position:relative;
+    padding:0 0 28px 44px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15.5px;
+    color:var(--ink);
+  }
+  .steps li::before{
+    counter-increment:step;
+    content:counter(step);
+    position:absolute;
+    left:0;
+    top:-2px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:var(--broth);
+    color:var(--bone);
+    font-family:Georgia, serif;
+    font-size:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .steps li strong{
+    display:block;
+    font-family:Georgia, serif;
+    font-size:17px;
+    color:var(--broth-deep);
+    margin-bottom:4px;
+    font-weight:normal;
+  }
+  .note{
+    margin-top:44px;
+    padding:20px 22px;
+    background:var(--bone-2);
+    border-left:3px solid var(--broth);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  @media (max-width:560px){
+    .ing-grid{grid-template-columns:1fr;}
+    h1{font-size:30px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Phở Hà Nội</p>
+      <h1>Nguyên liệu &amp; cách nấu</h1>
+      <p class="lead">Một bát phở ngon bắt đầu từ nước dùng trong, ngọt tự nhiên từ xương, và bánh phở mềm vừa tới. Dưới đây là những gì cần chuẩn bị và các bước nấu cơ bản.</p>
+    </header>
+
+    <section>
+      <h2>Nguyên liệu</h2>
+      <div class="ing-grid">
+        <div class="ing-group">
+          <h3>BÁNH PHỞ &amp; THỊT</h3>
+          <ul>
+            <li>Bánh phở tươi</li>
+            <li>Thịt bò (nạm, gầu, bắp)</li>
+            <li>Thịt bò thái mỏng (phở tái)</li>
+            <li>Xương bò (ống, đuôi)</li>
+            <li>Hành lá, hành tây</li>
+            <li>Rau thơm, giá đỗ</li>
+          </ul>
+        </div>
+        <div class="ing-group">
+          <h3>NƯỚC DÙNG &amp; GIA VỊ</h3>
+          <ul>
+            <li>Quế, hoa hồi</li>
+            <li>Thảo quả, đinh hương</li>
+            <li>Gừng, hành khô nướng</li>
+            <li>Nước mắm</li>
+            <li>Đường phèn</li>
+            <li>Muối, hạt nêm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cách nấu</h2>
+      <ol class="steps">
+        <li>
+          <strong>Sơ chế xương</strong>
+          Chần xương bò qua nước sôi để loại bỏ bọt bẩn, sau đó rửa sạch lại bằng nước lạnh.
+        </li>
+        <li>
+          <strong>Ninh nước dùng</strong>
+          Cho xương vào nồi lớn, đổ nước ngập, ninh liu riu 6–8 tiếng, thường xuyên hớt bọt để nước trong.
+        </li>
+        <li>
+          <strong>Nướng thơm gia vị</strong>
+          Nướng gừng và hành khô đến khi dậy mùi, rồi thả vào nồi nước dùng cùng quế, hồi, thảo quả.
+        </li>
+        <li>
+          <strong>Nêm nếm</strong>
+          Thêm nước mắm, đường phèn và muối, điều chỉnh đến khi nước dùng có vị ngọt thanh, đậm đà.
+        </li>
+        <li>
+          <strong>Trụng bánh phở</strong>
+          Trụng bánh phở qua nước sôi nhanh tay, cho vào tô cùng thịt bò và hành lá.
+        </li>
+        <li>
+          <strong>Chan nước dùng</strong>
+          Chan nước dùng đang sôi trực tiếp lên tô để làm chín thịt tái, dùng kèm rau thơm và giá đỗ.
+        </li>
+      </ol>
+    </section>
+
+    <div class="note">
+      Mẹo nhỏ: nước dùng ngon nhất khi được ninh ở lửa nhỏ trong thời gian dài — đun sôi mạnh sẽ làm nước bị đục.
+    </div>
+
+    <footer>
+      Phần 4/7 — Nguyên liệu &amp; cách nấu
+    </footer>
+  </div>
+</body>
+</html>
