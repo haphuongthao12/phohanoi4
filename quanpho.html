@@ -3,59 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quán Phở Nổi Tiếng Hà Nội</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>5 Quán Phở Nổi Tiếng Hà Nội</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+            color: #333;
+        }
+
+        /* Tiêu đề */
+        header {
+            background: #b22222;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Khung chứa */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* Thẻ quán phở */
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Ảnh */
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        /* Nội dung */
+        .content {
+            padding: 22px;
+        }
+
+        .content h2 {
+            color: #b22222;
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .address {
+            font-weight: bold;
+        }
+
+        .special {
+            color: #d2691e;
+            font-weight: bold;
+        }
+
+        /* Quán thứ 5 nằm giữa */
+        .card:nth-child(5) {
+            grid-column: 1 / 3;
+            width: 55%;
+            margin: auto;
+        }
+
+        /* Chân trang */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Điện thoại */
+        @media (max-width: 700px) {
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .card:nth-child(5) {
+                grid-column: auto;
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- TIÊU ĐỀ -->
     <header>
-        <h1>📍 Quán Phở Nổi Tiếng – Một Số Địa Điểm Nổi Tiếng Ở Hà Nội</h1>
-        <p>Danh sách 7 quán phở ngon chuẩn vị lâu đời bạn nhất định phải thử</p>
+        <h1>🍜 5 QUÁN PHỞ NỔI TIẾNG HÀ NỘI</h1>
+        <p>Khám phá những địa chỉ phở quen thuộc của Thủ đô</p>
     </header>
 
-    <main>
-        <section class="quan-pho">
-            <h2>1. Phở Gia Truyền Bát Đàn</h2>
-            <p><strong>Địa chỉ:</strong> 49 Bát Đàn, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Nổi tiếng với nét văn hóa "xếp hàng tự phục vụ", nước dùng ngọt thanh nguyên chất từ xương hầm và thịt bò tươi mềm.</p>
-        </section>
 
-        <section class="quan-pho">
-            <h2>2. Phở Thìn Bờ Hồ</h2>
-            <p><strong>Địa chỉ:</strong> 61 Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Quán phở nằm trong ngõ nhỏ đối diện Bờ Hồ với lịch sử hơn 70 năm, mang đậm phong cách phở truyền thống Hà Thành.</p>
-        </section>
+    <!-- DANH SÁCH QUÁN -->
+    <div class="container">
 
-        <section class="quan-pho">
-            <h2>3. Phở Thìn Lò Đúc</h2>
-            <p><strong>Địa chỉ:</strong> 13 Lò Đúc, Q. Hai Bà Trưng, Hà Nội</p>
-            <p>Thương hiệu nổi tiếng với món phở tái lăn béo ngậy, thịt bò xào tái lửa lớn thơm mùi tỏi và tràn ngập hành lá tươi.</p>
-        </section>
+        <!-- QUÁN 1 -->
+        <div class="card">
+            <img src="hinhanh/phobatdan.jpg" alt="Phở Bát Đàn">
 
-        <section class="quan-pho">
-            <h2>4. Phở 10 Lý Quốc Sư</h2>
-            <p><strong>Địa chỉ:</strong> 10 Lý Quốc Sư, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Thương hiệu phở quốc dân với không gian hiện đại, sạch sẽ và menu đa dạng từ tái, chín, nạm, gầu đến quẩy giòn.</p>
-        </section>
+            <div class="content">
 
-        <section class="quan-pho">
-            <h2>5. Phở Sướng</h2>
-            <p><strong>Địa chỉ:</strong> 24 Ngõ Trung Yên, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Nước dùng mang vị thanh ngọt đậm đà đặc trưng, thịt bò được thái miếng to bản nhưng vẫn rất mềm và thơm.</p>
-        </section>
+                <h2>🥢 1. Phở Gia Truyền Bát Đàn</h2>
 
-        <section class="quan-pho">
-            <h2>6. Phở Tư Lùn</h2>
-            <p><strong>Địa chỉ:</strong> 23C Hai Bà Trưng, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Điểm đặc trưng là nước dùng béo ngậy, đậm đà cùng thịt bò băm tái mỏng mềm ngọt tự nhiên.</p>
-        </section>
+                <p class="address">
+                    📍 49 Bát Đàn, Hoàn Kiếm, Hà Nội
+                </p>
 
-        <section class="quan-pho">
-            <h2>7. Phở Bò Khôi Hói</h2>
-            <p><strong>Địa chỉ:</strong> 50 Hàng Vải, Q. Hoàn Kiếm, Hà Nội</p>
-            <p>Quán chuyên về các phần thịt bò ngon như lõi rùa, gầu giòn, tái nạm đi kèm nước dùng trong và thơm vị thảo mộc.</p>
-        </section>
-    </main>
+                <p>
+                    Quán phở gia truyền lâu năm tại khu phố cổ,
+                    nổi tiếng với phở bò truyền thống.
+                </p>
+
+                <p>
+                    ⭐ <span class="special">Đặc trưng:</span>
+                    Phở bò tái, chín, tái nạm
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- QUÁN 2 -->
+        <div class="card">
+
+            <img src="hinhanh/thin.jpg" alt="Phở Thìn Lò Đúc">
+
+            <div class="content">
+
+                <h2>🥢 2. Phở Thìn Lò Đúc</h2>
+
+                <p class="address">
+                    📍 13 Lò Đúc, Hai Bà Trưng, Hà Nội
+                </p>
+
+                <p>
+                    Một địa chỉ phở lâu năm, nổi bật với
+                    cách chế biến thịt bò tái lăn.
+                </p>
+
+                <p>
+                    ⭐ <span class="special">Đặc trưng:</span>
+                    Phở bò tái lăn nhiều hành
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- QUÁN 3 -->
+        <div class="card">
+
+            <img src="hinhanh/lyquocsu.jpg" alt="Phở 10 Lý Quốc Sư">
+
+            <div class="content">
+
+                <h2>🥢 3. Phở 10 Lý Quốc Sư</h2>
+
+                <p class="address">
+                    📍 10 Lý Quốc Sư, Hoàn Kiếm, Hà Nội
+                </p>
+
+                <p>
+                    Quán phở nổi tiếng ở khu vực phố cổ,
+                    phục vụ nhiều lựa chọn phở bò.
+                </p>
+
+                <p>
+                    ⭐ <span class="special">Đặc trưng:</span>
+                    Phở bò tái, chín, nạm, gầu
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- QUÁN 4 -->
+        <div class="card">
+
+            <<img src="hinhanh/suong.jpg" alt="Phở Sướng">
+
+            <div class="content">
+
+                <h2>🥢 4. Phở Sướng</h2>
+
+                <p class="address">
+                    📍 24B Ngõ Trung Yên, Hoàn Kiếm, Hà Nội
+                </p>
+
+                <p>
+                    Quán nằm trong khu phố cổ, được biết đến
+                    với các món phở bò truyền thống.
+                </p>
+
+                <p>
+                    ⭐ <span class="special">Đặc trưng:</span>
+                    Phở bò và phở sốt vang
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- QUÁN 5 -->
+        <div class="card">
+
+            <img src="hinhanh/hangtrong.jpg" alt="Phở Bưng Hàng Trống">
+
+            <div class="content">
+
+                <h2>🥢 5. Phở Bưng Hàng Trống</h2>
+
+                <p class="address">
+                    📍 Khu vực Hàng Trống, Hoàn Kiếm, Hà Nội
+                </p>
+
+                <p>
+                    Một nét ăn phở đặc biệt của khu phố cổ Hà Nội,
+                    gắn với cách thưởng thức phở khá độc đáo.
+                </p>
+
+                <p>
+                    ⭐ <span class="special">Đặc trưng:</span>
+                    Phở bưng truyền thống
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CHÂN TRANG -->
+    <footer>
+        <p>🍜 Khám phá ẩm thực Hà Nội</p>
+        <p>© 2026 - Pho Hanoi</p>
+    </footer>
+
 </body>
 </html>
-
-  
