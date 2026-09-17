@@ -1,165 +1,417 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Khám phá phở trong văn hoá Hà Nội – một nét đẹp ẩm thực được gìn giữ qua nhiều thế hệ.">
 
     <title>Phở trong văn hoá Hà Nội</title>
 
+    <!-- Kết nối với file CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h1> PHỞ TRONG VĂN HOÁ HÀ NỘI</h1>
-        <p>Hương vị truyền thống và nét đẹp văn hoá của Thủ đô</p>
+
+    <header class="header">
+
+        <div class="container header-inner">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span>
+                <span>Phở Hà Nội</span>
+            </a>
+
+            <nav class="navigation">
+                <a href="#trang-chu">Trang chủ</a>
+                <a href="#van-hoa">Văn hoá</a>
+                <a href="#phuong-phap">Hương vị</a>
+                <a href="#duong-pho">Đường phố</a>
+                <a href="#di-san">Di sản</a>
+            </nav>
+
+            <a href="#kham-pha" class="header-button">
+                Khám phá
+            </a>
+
+        </div>
+
     </header>
 
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="lichsu.html">Lịch sử</a>
-        <a href="cacloaipho.html">Các loại phở</a>
-        <a href="nguyenlieu.html">Nguyên liệu và cách chế biến</a>
-        <a href="quanpho.html">Quán phở nổi tiếng</a>
-        <a href="vanhoa.html">Văn hoá</a>
-        <a href="trainghiem.html">Trải Nghiệm</a>
-    </nav>
 
     <main>
 
-        <section>
-            <h2>1. Phở trong văn hoá Hà Nội</h2>
+       
+        <section class="hero" id="trang-chu">
 
-            <p>
-                Nhắc đến Hà Nội, bên cạnh những con phố cổ, những hàng cây
-                và những di tích lịch sử, phở cũng là một hình ảnh quen thuộc
-                trong đời sống của người dân Thủ đô. Phở đã trở thành một món
-                ăn gắn bó với nhiều thế hệ người Hà Nội.
-            </p>
+            <div class="hero-overlay"></div>
 
-            <p>
-                Phở không chỉ đơn giản là một món ăn dùng để no mà còn thể hiện
-                nét tinh tế trong văn hoá ẩm thực. Từ bánh phở, nước dùng,
-                thịt cho đến các loại gia vị đều được kết hợp để tạo nên
-                một hương vị đặc trưng.
-            </p>
+            <div class="container hero-content">
 
-            <p>
-                Đặc biệt, những hàng phở trên các con phố Hà Nội thường bắt đầu
-                đông khách từ sáng sớm. Hình ảnh người dân ngồi bên những bát
-                phở nóng đã trở thành một phần quen thuộc của nhịp sống Hà Nội.
-            </p>
+                <p class="eyebrow">
+                    PHỞ TRONG VĂN HOÁ
+                </p>
+
+                <h1>
+                    Hương vị<br>
+                    Hà Nội
+                </h1>
+
+                <p class="hero-description">
+                    Không chỉ là một món ăn, phở đã trở thành
+                    một phần ký ức, nhịp sống và văn hoá
+                    của người Hà Nội.
+                </p>
+
+                <a href="#van-hoa" class="main-button">
+                    Khám phá câu chuyện
+                    <span>→</span>
+                </a>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>2. Phở trong đời sống của người Hà Nội</h2>
+        
+        <section class="intro section" id="van-hoa">
 
-            <p>
-                Trong cuộc sống hàng ngày, phở thường được lựa chọn làm món ăn
-                sáng. Một bát phở nóng vào buổi sáng vừa là một bữa ăn ngon,
-                vừa tạo nên một thói quen quen thuộc của nhiều người.
-            </p>
+            <div class="container intro-grid">
 
-            <p>
-                Không chỉ có người lớn, phở còn được nhiều thế hệ trong gia đình
-                yêu thích. Có những quán phở đã tồn tại trong thời gian dài,
-                được nhiều người biết đến và thường xuyên quay lại thưởng thức.
-            </p>
+                <div class="intro-text">
 
-            <p>
-                Vì vậy, phở dần trở thành một phần của đời sống văn hoá Hà Nội.
-                Qua việc thưởng thức phở, mọi người cũng có thể cảm nhận được
-không khí sinh hoạt và nét đặc trưng của phố phường Hà Nội.
-            </p>
+                    <p class="section-label">
+                        VĂN HOÁ ẨM THỰC
+                    </p>
+
+                    <h2>
+                        Phở – hơn cả<br>
+                        một món ăn
+                    </h2>
+
+                    <div class="decor-line"></div>
+
+                    <p>
+                        Phở là một trong những biểu tượng đặc trưng
+                        của ẩm thực Hà Nội. Một bát phở giản dị nhưng
+                        chứa đựng câu chuyện về con người, phố phường
+                        và những giá trị được truyền qua nhiều thế hệ.
+                    </p>
+
+                    <p>
+                        Từ những hàng phở nhỏ bên vỉa hè đến những
+                        căn bếp gia đình, phở đã trở thành một phần
+                        quen thuộc trong đời sống của người Hà Nội.
+                    </p>
+
+                    <a href="#duong-pho" class="text-button">
+                        Tìm hiểu thêm
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="intro-image">
+
+                    <img
+                        src="vanhoa.jpg"
+                        alt="Quán phở đường phố Hà Nội">
+
+                    <div class="image-caption">
+                        <span>01</span>
+                        Phở giữa lòng phố Hà Nội
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>3. Phở trong văn hoá du lịch</h2>
+        <!-- ================= CULTURE ================= -->
+        <section class="culture section">
 
-            <p>
-                Phở cũng đóng vai trò quan trọng trong việc giới thiệu văn hoá
-                ẩm thực Hà Nội đến với du khách. Khi đến Thủ đô, nhiều du khách
-                muốn thưởng thức những món ăn đặc trưng của địa phương và phở
-                là một trong những món ăn được nhiều người lựa chọn.
-            </p>
+            <div class="container">
 
-            <p>
-                Một bát phở không chỉ mang đến hương vị đặc trưng mà còn giúp
-                du khách có thêm trải nghiệm về cuộc sống của người dân Hà Nội.
-                Từ không gian quán ăn, cách phục vụ cho đến cách thưởng thức
-                đều tạo nên một trải nghiệm thú vị.
-            </p>
+                <div class="culture-heading">
 
-            <p>
-                Phở cũng góp phần quảng bá hình ảnh Hà Nội đến với du khách
-                trong nước và quốc tế. Qua món ăn này, nét đẹp của văn hoá
-                ẩm thực Hà Nội có thể được giới thiệu rộng rãi hơn.
-            </p>
+                    <div>
+                        <p class="section-label light">
+                            GIÁ TRỊ VĂN HOÁ
+                        </p>
+
+                        <h2>
+                            Phở gắn liền với<br>
+                            đời sống người Hà Nội
+                        </h2>
+                    </div>
+
+                    <p>
+                        Một bát phở có thể bắt đầu ngày mới,
+                        kết nối những cuộc gặp gỡ và lưu giữ
+                        những ký ức rất riêng của Hà Nội.
+                    </p>
+
+                </div>
+
+
+                <div class="culture-cards">
+
+                    <!-- CARD 1 -->
+                    <article class="culture-card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <div class="card-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Tinh tế trong hương vị
+                        </h3>
+
+                        <p>
+                            Nước dùng trong, vị thanh,
+                            thơm từ những nguyên liệu
+                            được ninh kỹ.
+                        </p>
+
+                    </article>
+
+
+                
+                    <article class="culture-card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <div class="card-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Gắn kết con người
+                        </h3>
+
+                        <p>
+                            Phở xuất hiện trong những
+                            buổi gặp gỡ, câu chuyện và
+                            khoảnh khắc đời thường.
+                        </p>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="culture-card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <div class="card-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Niềm tự hào Hà Nội
+                        </h3>
+
+                        <p>
+                            Từ một món ăn địa phương,
+                            phở đã trở thành hình ảnh
+                            quen thuộc của Hà Nội.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>4. Phở - một nét đẹp của ẩm thực Hà Nội</h2>
+        
+        <section class="street section" id="duong-pho">
 
-            <p>
-                Phở đã trở thành một món ăn mang nhiều giá trị về văn hoá.
-                Mỗi bát phở là sự kết hợp giữa nguyên liệu, cách chế biến
-                và kinh nghiệm của người nấu.
-            </p>
+            <div class="container street-grid">
 
-            <p>
-                Bên cạnh giá trị ẩm thực, phở còn thể hiện sự gắn bó giữa
-                món ăn với đời sống con người. Từ một món ăn bình dị,
-                phở đã trở thành một trong những hình ảnh thường được nhắc
-                đến khi nói về Hà Nội.
-            </p>
+                <div class="street-image">
+
+                    <img
+                        src="vanhoa5.jpg"
+                        alt="Phở tại một hàng phở đường phố Hà Nội">
+
+                    <div class="street-badge">
+                        HÀ NỘI
+                    </div>
+
+                </div>
+
+
+                <div class="street-content">
+
+                    <p class="section-label">
+                        PHỞ TRONG ĐỜI SỐNG
+                    </p>
+
+                    <h2>
+                        Hương phở<br>
+                        giữa phố quen
+                    </h2>
+
+                    <p>
+                        Những hàng phở nhỏ bên vỉa hè là một phần
+                        không thể thiếu trong nhịp sống Hà Nội.
+                        Buổi sáng, người Hà Nội ngồi bên chiếc
+                        ghế thấp, thưởng thức một bát phở nóng
+                        giữa âm thanh quen thuộc của phố phường.
+                    </p>
+
+                    <p>
+                        Chính sự giản dị ấy tạo nên một nét văn hoá
+                        rất riêng – gần gũi, chân thành nhưng tinh tế.
+                    </p>
+
+                    <a href="#di-san" class="main-button dark-button">
+                        Khám phá di sản
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>5. Phở và việc gìn giữ văn hoá truyền thống</h2>
+       
+        <section class="featured section">
 
-            <p>
-                Trong quá trình phát triển của xã hội, cách thưởng thức và
-                chế biến phở cũng có nhiều thay đổi. Tuy nhiên, những giá trị
-                truyền thống của phở Hà Nội vẫn được nhiều người quan tâm
-                và gìn giữ.
-            </p>
+            <div class="container">
 
-            <p>
-                Việc duy trì những quán phở truyền thống và giới thiệu phở
-                đến thế hệ trẻ cũng góp phần bảo tồn nét đẹp trong văn hoá
-                ẩm thực Hà Nội.
-            </p>
+                <div class="featured-image">
+
+                    <img
+                        src="vanhoa3.jpg"
+                        alt="Bát phở Hà Nội truyền thống">
+
+                    <div class="featured-overlay">
+
+                        <p>
+                            HƯƠNG VỊ TRUYỀN THỐNG
+                        </p>
+
+                        <h2>
+                            Một bát phở.<br>
+                            Một câu chuyện Hà Nội.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section>
-            <h2>6. Kết luận</h2>
+       
+        <section class="heritage section" id="di-san">
 
-            <p>
-Có thể nói, phở không chỉ là một món ăn quen thuộc mà còn
-                là một phần trong văn hoá Hà Nội. Phở gắn liền với đời sống
-                hàng ngày, với những con phố và với trải nghiệm của nhiều
-                du khách khi đến Thủ đô.
-            </p>
+            <div class="container heritage-grid">
 
-            <p>
-                Chính sự gần gũi và những giá trị văn hoá đó đã giúp phở
-                trở thành một nét đặc trưng của Hà Nội. Giữ gìn và giới thiệu
-                phở cũng là một cách góp phần giới thiệu văn hoá ẩm thực
-                của Thủ đô đến với mọi người.
-            </p>
+                <div class="heritage-content">
+
+                    <p class="section-label">
+                        BẢN SẮC HÀ NỘI
+                    </p>
+
+                    <h2>
+                        Phở – di sản<br>
+                        văn hoá ẩm thực
+                    </h2>
+
+                    <p>
+                        Qua thời gian, phở không chỉ giữ được
+                        hương vị truyền thống mà còn trở thành
+                        một hình ảnh đại diện cho văn hoá ẩm thực
+                        Hà Nội.
+                    </p>
+
+                    <p>
+                        Mỗi bát phở là sự kết hợp giữa nguyên liệu,
+                        kỹ thuật chế biến và ký ức của những con
+                        người đã gìn giữ món ăn này qua năm tháng.
+                    </p>
+
+                    <a href="#" class="text-button">
+                        Đọc câu chuyện
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="heritage-image">
+
+                    <img
+                        src="vanhoa2.jpg"
+                        alt="Phở truyền thống Hà Nội">
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
 
+    
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-logo">
+                <span class="logo-icon">✦</span>
+                Phở Hà Nội
+            </div>
+
+            <p>
+                Hơn cả một món ăn – một phần ký ức Hà Nội.
+            </p>
+
+            <div class="footer-social">
+                <a href="#">F</a>
+                <a href="#">I</a>
+                <a href="#">Y</a>
+            </div>
+
+        </div>
+
+    </footer>
+
 
 </body>
-
 </html>
+```
