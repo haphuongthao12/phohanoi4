@@ -182,141 +182,609 @@ Trang 6
 
 }
 
+/* =================================================
+   PHỞ HÀ NỘI
+   STYLE.CSS
+   ================================================= */
 
-/* ===== TRANG CHỦ ===== */
+
+/* ================= CƠ BẢN ================= */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
+
+    background-color: #faf8f4;
+
+    color: #333;
+
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
 
-header {
-    height: 100px;
+/* ================= HEADER ================= */
+
+.header {
     position: relative;
-    border-bottom: 3px solid #8b0000;
+
+    width: 100%;
+
+    background-color: white;
+
+    border-bottom: 1px solid #e4caca;
+
+    padding: 18px 5%;
+
+    text-align: center;
 }
 
-header h1 {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    margin: 0;
-    color: #8b0000;
-    font-size: 32px;
+
+/* Logo */
+
+.logo {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-right: 45px;
+
+    text-align: left;
 }
 
-/* MENU */
 
-nav {
-    position: absolute;
-    right: 30px;
-    top: 35px;
-}
+.logo-bieu-tuong {
+    display: inline-block;
 
-nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333333;
+    vertical-align: middle;
+
+    width: 55px;
+    height: 55px;
+
+    line-height: 55px;
+
+    border: 2px solid #9b0000;
+
+    border-radius: 50%;
+
+    color: #9b0000;
+
+    font-size: 13px;
+
     font-weight: bold;
+
+    text-align: center;
 }
 
-nav a:hover {
+
+.logo-chu {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-left: 10px;
+}
+
+
+.logo-chu h1 {
+    margin: 0;
+
     color: #8b0000;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    letter-spacing: 2px;
 }
 
 
-/* NỘI DUNG */
+.logo-chu p {
+    margin: 4px 0 0;
 
-main {
+    color: #9b0000;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= MENU ================= */
+
+.menu {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+
+.menu a {
+    display: inline-block;
+
+    padding: 12px 13px;
+
+    margin: 0 2px;
+
+    color: #7d0000;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.3px;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #b30000;
+
+    border-bottom: 2px solid #b30000;
+}
+
+
+.menu a.active {
+    color: #b30000;
+
+    border-bottom: 2px solid #b30000;
+}
+
+
+/* ================= BANNER ================= */
+
+.banner {
+    position: relative;
+
     width: 90%;
-    margin: 30px auto;
+
+    height: 490px;
+
+    margin: 45px auto;
+
+    background-color: #f4eadb;
+
+    overflow: hidden;
 }
 
-h2 {
-    color: #8b0000;
+
+.banner-noi-dung {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 47%;
+
+    padding: 105px 0 0 8%;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
-/* GIỚI THIỆU */
+.banner-phu {
+    color: #9b0000;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+.banner h2 {
+    margin: 15px 0;
+
+    color: #7d0000;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    letter-spacing: 3px;
+}
+
+
+.banner-duong-ke {
+    width: 75px;
+
+    height: 3px;
+
+    margin: 20px 0;
+
+    background-color: #a00000;
+}
+
+
+.banner-mo-ta {
+    width: 350px;
+
+    color: #555;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.banner-nut {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 25px;
+
+    border: 1px solid #9b0000;
+
+    color: #9b0000;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.35s;
+}
+
+
+.banner-nut:hover {
+    background-color: #9b0000;
+
+    color: white;
+}
+
+
+.banner-anh {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 52%;
+
+    height: 100%;
+}
+
+
+.banner-anh img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.6s;
+}
+
+
+.banner:hover .banner-anh img {
+    transform: scale(1.04);
+}
+
+
+/* ================= GIỚI THIỆU ================= */
 
 .gioi-thieu {
+    width: 70%;
+
+    margin: 90px auto 80px;
+
     text-align: center;
 }
 
-.gioi-thieu h2 {
-    font-size: 30px;
-}
 
-.gioi-thieu img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    border: 2px solid #8b0000;
-}
+.tieu-de-phu {
+    margin-bottom: 10px;
 
-.gioi-thieu p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+    color: #a00000;
 
+    font-size: 12px;
 
-/* GIỚI THIỆU WEBSITE */
-
-.gioi-thieu-website {
-    margin-top: 40px;
-    padding: 20px;
-    border: 1px solid #cccccc;
-    text-align: center;
-}
-
-.gioi-thieu-website p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* NỘI DUNG NỔI BẬT */
-
-.cac-noi-dung {
-    margin-top: 40px;
-}
-
-.cac-noi-dung > h2 {
-    text-align: center;
-    font-size: 28px;
-}
-
-.noi-dung {
-    display: inline-block;
-    vertical-align: top;
-    width: 28%;
-    min-height: 180px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #cccccc;
-}
-
-.noi-dung h3 {
-    color: #8b0000;
-}
-
-.noi-dung p {
-    line-height: 1.5;
-}
-
-.noi-dung a {
-    color: #8b0000;
     font-weight: bold;
+
+    letter-spacing: 3px;
 }
 
 
-/* FOOTER */
+.gioi-thieu h2,
+#kham-pha h2 {
+    margin: 10px 0;
 
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    border-top: 2px solid #8b0000;
+    color: #7d0000;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    letter-spacing: 1px;
+}
+
+
+.duong-ke {
+    width: 65px;
+
+    height: 2px;
+
+    margin: 20px auto;
+
+    background-color: #a00000;
+}
+
+
+.gioi-thieu-text {
+    width: 75%;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= 6 Ô ================= */
+
+#kham-pha {
+    width: 90%;
+
+    margin: 0 auto 100px;
+
     text-align: center;
+}
+
+
+.mo-ta-kham-pha {
+    width: 60%;
+
+    margin: 0 auto 40px;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= TỪNG Ô ================= */
+
+.o-pho {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 29%;
+
+    height: 405px;
+
+    margin: 12px;
+
+    padding: 25px 22px;
+
+    background-color: white;
+
+    border: 1px solid #dcbcbc;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* đường đỏ bên trên */
+
+.o-pho:before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 0;
+
+    height: 3px;
+
+    background-color: #9b0000;
+
+    transform: translateX(-50%);
+
+    transition: 0.4s;
+}
+
+
+/* HÌNH VẼ */
+
+.anh-ve {
+    width: 100%;
+
+    height: 180px;
+
+    padding-top: 5px;
+
+    text-align: center;
+}
+
+
+.anh-ve svg {
+    width: 220px;
+
+    height: 165px;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* TÊN */
+
+.o-pho h3 {
+    margin: 5px 0 8px;
+
+    color: #8b0000;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ĐƯỜNG KẺ NHỎ */
+
+.ke-nho {
+    width: 35px;
+
+    height: 2px;
+
+    margin: 0 auto 15px;
+
+    background-color: #c28b6d;
+
+    transition: 0.4s;
+}
+
+
+/* MÔ TẢ */
+
+.o-pho p {
+    height: 55px;
+
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* NÚT */
+
+.o-pho a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 9px 18px;
+
+    border: 1px solid #b30000;
+
+    color: #9b0000;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.35s;
+}
+
+
+/* ================= HIỆU ỨNG HOVER ================= */
+
+.o-pho:hover {
+    transform: translateY(-10px);
+
+    border-color: #a00000;
+
+    box-shadow: 0 15px 35px rgba(80, 0, 0, 0.13);
+}
+
+
+.o-pho:hover:before {
+    width: 100%;
+}
+
+
+.o-pho:hover .anh-ve svg {
+    transform: scale(1.08);
+}
+
+
+.o-pho:hover .ke-nho {
+    width: 65px;
+}
+
+
+.o-pho:hover a {
+    background-color: #9b0000;
+
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    padding: 45px 20px;
+
+    background-color: #7d0000;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.footer-logo {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+}
+
+
+.footer p {
+    font-size: 13px;
+
+    opacity: 0.85;
+}
+
+
+.footer-duong-ke {
+    width: 50px;
+
+    height: 1px;
+
+    margin: 20px auto;
+
+    background-color: #e5c2a8;
+}
+
+
+.copyright {
+    font-size: 11px !important;
+
+    letter-spacing: 1px;
 }
