@@ -23,14 +23,13 @@ Website giới thiệu về Phở Hà Nội – món ăn truyền thống và n�
 
 👥 Thành viên nhóm
 
-| STT | Thành viên | Trang phụ trách |
-| 1 | Lương Hoàng Hải Yến | Trang chủ |
-| 2 | Đinh Huyền Trang | Lịch sử |
-| 3 | Tống Khánh Hòa | Các loại phở |
-| 4 | Nguyễn Minh Quang | Nguyên liệu |
-| 5 | Phạm Minh Nhật | Quán phở |
-| 6 | Lưu Thị Thanh Tuyền | Văn hóa |
-| 7 | Hà Phương Thảo | Trải nghiệm |
+1. Lương Hoàng Hải Yến - 24102942 - Làm trang 1: Trang chủ - Index
+2. Đinh Huyền Trang - 24107461 - Làm trang 2: Trang Lịch sử
+3. Tống Khánh Hòa - 24103210 - Làm trang 3: Trang Các loại phở
+4. Nguyễn Minh Quang - 24100419 - Làm trang 4: Trang Nguyên liệu
+5. Phạm Minh Nhật - 24104253 - Làm trang 5: Trang Quán phở
+6. Lưu Thị Thanh Tuyền - 24103407 - Làm trang 6: Trang Văn hóa
+7. Hà Phương Thảo - 24103607 - Làm trang 7: Trang Trải nghiệm
 
 ⚠️ Khó khăn nhóm gặp phải
 
