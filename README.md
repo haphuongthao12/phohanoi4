@@ -40,13 +40,13 @@ Trong quá trình thực hiện website, nhóm gặp một số khó khăn:
 
 - Khó khăn trong việc liên kết các trang
 
-- Khó khăn khi sử dụng CSS chung:Nhóm sử dụng một file `style.css` cho nhiều trang nên khi chỉnh sửa giao diện của một trang, đôi khi ảnh hưởng đến các trang khác. 
+- Khó khăn khi sử dụng CSS chung: Nhóm sử dụng một file `style.css` cho nhiều trang nên khi chỉnh sửa giao diện của một trang, đôi khi ảnh hưởng đến các trang khác. 
 
 - Lỗi hình ảnh: Một số hình ảnh không hiển thị do sai tên file hoặc đường dẫn.
 
 - Thiết kế Responsive: Việc điều chỉnh giao diện để website hiển thị phù hợp trên máy tính, máy tính bảng và điện thoại cũng gây một số khó khăn, đặc biệt là kích thước chữ, hình ảnh và bố cục.
 
-- Khó khăn khi sử dụng Git và GitHub:Nhóm gặp một số lỗi khi đưa file lên GitHub, đồng bộ code giữa máy tính và repository, cũng như xảy ra xung đột khi nhiều thay đổi được cập nhật.
+- Khó khăn khi sử dụng Git và GitHub: Nhóm gặp một số lỗi khi đưa file lên GitHub, đồng bộ code giữa máy tính và repository, cũng như xảy ra xung đột khi nhiều thay đổi được cập nhật.
 
 - Gộp và đồng bộ bài làm: Vì mỗi thành viên phụ trách một trang riêng nên việc thống nhất giao diện, menu, hình ảnh và cấu trúc giữa các trang cần nhiều lần kiểm tra và chỉnh sửa.
 
